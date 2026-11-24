@@ -606,7 +606,7 @@ function editar(titulo, campos, val, podeApagar) {
       if (dlg.returnValue !== 'salvar') return res(null);
       const out = {};
       campos.forEach(c => {
-        const v = form.elements[c.k].value;
+        const v = form.elements.namedItem(c.k).value;
         out[c.k] = c.tipo === 'number' ? num(v) : c.tipo === 'textarea' && c.lista ? linhas(v) : v.trim();
       });
       res(out);
@@ -779,20 +779,23 @@ async function acao(el) {
     salvar('Festa atualizada');
   }
 }
-document.addEventListener('click', e => { const el = e.target.closest('[data-acao]'); if (el) { e.preventDefault(); acao(el); } });
+document.addEventListener('click', e => { const el = e.target.closest('[data-acao]'); if (el) { e.preventDefault(); acao(el).catch(erroSalvar); } });
+function erroSalvar(err) { console.error(err); toast('Não consegui salvar. Me mande um print desta tela.'); }
 document.addEventListener('change', e => {
   const s = e.target.closest('select[data-conv]'); if (!s) return;
-  D.convidados_lista[+s.dataset.conv].status = s.value; salvar();
+  try { D.convidados_lista[+s.dataset.conv].status = s.value; salvar(); } catch (err) { erroSalvar(err); }
 });
 document.addEventListener('submit', e => {
   const form = e.target.closest('form[data-add]'); if (!form) return;
   e.preventDefault();
   const t = form.querySelector('input').value.trim(); if (!t) return;
   const tipo = form.dataset.add;
+  try {
   if (tipo === 'decisoes') D.decisoes.push(t);
   else if (tipo === 'convidados') { D.convidados_lista = D.convidados_lista || []; D.convidados_lista.push({nome: t, grupo: '', status: 'convidado', restricao: ''}); }
   else D[tipo][+form.dataset.g].itens.push({texto: t, feito: false});
   salvar('Adicionado');
+  } catch (err) { erroSalvar(err); }
 });
 
 /* ---------- sincronização com Gist (igual ao VAT2 Estudos) ---------- */
