@@ -1,0 +1,618 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>25 anos da Isabelly</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,700&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --rosa:#E6358A; --rosa-claro:#F4A6C4; --vermelho:#D62839; --coral:#FF7F6B;
+  --amarelo:#FFD66B; --creme:#FBF1E3; --oliva:#4F6B4A; --branco:#FFFFFF;
+  --tinta:#3A2530; --suave:#6E5862; --linha:#EBD9C8; --cartao:#FFFDF9;
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--creme);color:var(--tinta);font-family:"DM Sans",system-ui,sans-serif;font-size:16px;line-height:1.5}
+h1,h2,h3{font-family:"Fraunces",Georgia,serif;font-weight:700;line-height:1.15;margin:0}
+a{color:var(--vermelho)}
+.wrap{max-width:1080px;margin:0 auto;padding:0 16px}
+
+header{padding:36px 0 20px}
+header h1{font-size:clamp(2.2rem,7vw,3.6rem);color:var(--vermelho);letter-spacing:-.02em}
+header .sub{color:var(--oliva);font-size:1.1rem;margin-top:6px}
+.toprow{display:flex;justify-content:space-between;align-items:center;gap:12px;margin-top:14px;flex-wrap:wrap}
+.dots{display:flex;gap:6px}
+.dots span{width:18px;height:18px;border-radius:50%;border:1px solid rgba(0,0,0,.08)}
+#sync{font-size:.85rem;color:var(--suave)}
+
+nav{position:sticky;top:0;z-index:5;background:var(--creme);border-bottom:1px solid var(--linha)}
+nav .wrap{display:flex;gap:4px;overflow-x:auto;scrollbar-width:none}
+nav .wrap::-webkit-scrollbar{display:none}
+nav button{flex:0 0 auto;font:500 .95rem "DM Sans",sans-serif;color:var(--suave);background:none;border:0;padding:14px 12px;min-height:44px;cursor:pointer;border-bottom:3px solid transparent}
+nav button[aria-selected="true"]{color:var(--vermelho);border-bottom-color:var(--rosa)}
+
+main{padding:24px 0 64px}
+section[hidden]{display:none}
+.sec-h{display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap;margin:8px 0 16px}
+.sec-h h2,section > h2{font-size:1.7rem;margin:8px 0 16px}
+.sec-h h2{margin:0}
+.grid{display:grid;gap:16px}
+@media(min-width:760px){.g2{grid-template-columns:1fr 1fr}.g3{grid-template-columns:repeat(3,1fr)}}
+.card{background:var(--cartao);border:1px solid var(--linha);border-radius:16px;padding:20px}
+.card h3{font-size:1.2rem;margin-bottom:10px}
+.card-h{display:flex;justify-content:space-between;align-items:flex-start;gap:10px}
+.muted{color:var(--suave)}
+.small{font-size:.88rem}
+
+.btn{font:700 .9rem "DM Sans",sans-serif;border-radius:99px;border:1.5px solid var(--rosa);background:var(--cartao);color:var(--rosa);padding:9px 16px;min-height:40px;cursor:pointer}
+.btn:hover{background:#FDEAF3}
+.btn.pri{background:var(--rosa);color:#fff}
+.btn.pri:hover{background:#C9277A}
+.btn.perigo{border-color:#B3261E;color:#B3261E}
+.btn.mini{padding:5px 12px;min-height:32px;font-size:.82rem}
+.lnk{background:none;border:0;color:var(--rosa);font:700 .85rem "DM Sans",sans-serif;cursor:pointer;padding:6px 4px;min-height:32px}
+.actions{display:flex;gap:10px;flex-wrap:wrap;margin-top:14px}
+
+.count{background:var(--rosa);color:var(--branco);border:0}
+.count .big{display:flex;gap:18px;flex-wrap:wrap;align-items:flex-end;margin-top:6px}
+.count .n{font-family:"Fraunces",serif;font-size:clamp(3rem,12vw,5rem);font-weight:700;line-height:1}
+.count .u{font-size:.95rem;opacity:.95}
+.count .unit{display:flex;flex-direction:column}
+.count .lbl{font-weight:500}
+
+dl.info{margin:0;display:grid;grid-template-columns:auto 1fr;gap:6px 14px}
+dl.info dt{color:var(--suave);font-size:.9rem}
+dl.info dd{margin:0}
+@media(max-width:520px){dl.info{grid-template-columns:1fr;gap:2px}dl.info dd{margin-bottom:10px}}
+.alerta{background:#FDE3E6;border:1px solid #F3B5BD;color:#7A1424;border-radius:12px;padding:12px 14px;font-weight:500}
+
+.money{font-family:"Fraunces",serif;font-size:2rem;font-weight:700;color:var(--vermelho)}
+.bar{height:14px;background:#F1E2D3;border-radius:99px;position:relative;overflow:hidden;margin:10px 0 6px}
+.bar i{position:absolute;top:0;bottom:0;left:0;border-radius:99px}
+.bar .lo{background:var(--rosa)}
+.bar .hi{background:var(--rosa-claro)}
+.bar .teto{position:absolute;top:-4px;bottom:-4px;width:2px;background:var(--tinta)}
+.legend{display:flex;gap:14px;flex-wrap:wrap;font-size:.85rem;color:var(--suave)}
+.legend b{display:inline-block;width:10px;height:10px;border-radius:3px;margin-right:5px;vertical-align:-1px}
+
+.tablebox{overflow-x:auto;border:1px solid var(--linha);border-radius:16px;background:var(--cartao)}
+table{border-collapse:collapse;width:100%;min-width:680px}
+th,td{text-align:left;padding:12px 14px;border-bottom:1px solid var(--linha);vertical-align:top}
+th{font-size:.8rem;text-transform:uppercase;letter-spacing:.05em;color:var(--suave);font-weight:700}
+td.num,th.num{text-align:right;white-space:nowrap}
+tbody tr:last-child td{border-bottom:0}
+tfoot td{font-weight:700;background:#FFF5EC;border-bottom:0;border-top:1px solid var(--linha)}
+
+.chip{display:inline-block;font-size:.78rem;font-weight:700;padding:3px 10px;border-radius:99px;white-space:nowrap}
+.st-fechado{background:#DDEBD9;color:#2F4A2B}
+.st-recebido{background:#FFE9B3;color:#6B4A00}
+.st-estimativa{background:#EFE4DA;color:#5E4A3C}
+.st-aguardando{background:#FCD9E8;color:#8A1650}
+.st-a-pedir{background:#F2F0EE;color:#55504C}
+.st-descartado{background:#EEE;color:#666;text-decoration:line-through}
+
+.forn .val{font-family:"Fraunces",serif;font-size:1.5rem;color:var(--vermelho)}
+.forn ul{margin:6px 0 10px;padding-left:20px}
+.forn .lab{font-size:.8rem;text-transform:uppercase;letter-spacing:.05em;color:var(--suave);font-weight:700;margin-top:10px}
+.forn .no li{color:#8A1650}
+.cat-h{display:flex;justify-content:space-between;align-items:center;gap:10px;margin:28px 0 12px}
+.cat-h h3{font-size:1.3rem;color:var(--oliva)}
+
+.check{list-style:none;margin:0;padding:0}
+.check li{display:flex;align-items:flex-start;gap:4px;border-bottom:1px solid var(--linha)}
+.check li:last-child{border-bottom:0}
+.tog{flex:1;display:flex;gap:12px;text-align:left;background:none;border:0;padding:10px 0;font:inherit;color:inherit;cursor:pointer;min-height:44px}
+.box{flex:0 0 22px;height:22px;border-radius:7px;border:2px solid var(--rosa-claro);margin-top:1px;position:relative}
+.feito .box{background:var(--oliva);border-color:var(--oliva)}
+.feito .box::after{content:"";position:absolute;left:6px;top:2px;width:6px;height:11px;border:solid #fff;border-width:0 2.5px 2.5px 0;transform:rotate(45deg)}
+.feito .t{color:var(--suave);text-decoration:line-through}
+.del{flex:0 0 auto;background:none;border:0;color:#B79AA6;font-size:1.3rem;line-height:1;cursor:pointer;width:40px;height:44px;border-radius:8px}
+.del:hover{color:#B3261E;background:#FDEAF0}
+.add{display:flex;gap:8px;margin-top:10px}
+.add input{flex:1;min-width:0}
+.prog{display:flex;justify-content:space-between;align-items:baseline;margin-bottom:6px}
+.prog b{color:var(--oliva)}
+
+input.f,textarea.f,select.f{width:100%;font:inherit;font-size:16px;color:var(--tinta);background:#fff;border:1.5px solid var(--linha);border-radius:10px;padding:9px 12px;min-height:42px}
+input.f:focus,textarea.f:focus,select.f:focus{outline:2px solid var(--rosa-claro);border-color:var(--rosa)}
+textarea.f{min-height:96px;resize:vertical}
+label.f{display:block;font-weight:700;font-size:.88rem;margin:12px 0 5px}
+.campos2{display:grid;gap:0 12px}
+@media(min-width:560px){.campos2{grid-template-columns:1fr 1fr}}
+
+dialog{border:0;border-radius:18px;padding:0;width:min(560px,calc(100vw - 24px));max-height:calc(100vh - 32px);background:var(--cartao);color:var(--tinta);box-shadow:0 20px 60px rgba(58,37,48,.3)}
+dialog::backdrop{background:rgba(58,37,48,.45)}
+dialog form{padding:22px}
+dialog h3{font-size:1.4rem}
+.dlg-act{display:flex;gap:10px;justify-content:flex-end;flex-wrap:wrap;margin-top:20px}
+.dlg-act .esq{margin-right:auto}
+
+.mood img{width:100%;height:auto;border-radius:12px;display:block}
+.pal{display:grid;grid-template-columns:repeat(auto-fill,minmax(110px,1fr));gap:12px}
+.pal div{border-radius:12px;overflow:hidden;border:1px solid var(--linha);background:var(--cartao)}
+.pal span{display:block;height:64px}
+.pal p{margin:0;padding:8px 10px;font-size:.85rem}
+.pal small{color:var(--suave)}
+ul.plain{margin:0;padding-left:20px}
+ul.plain li{margin:4px 0}
+ol.passos{padding-left:1.2rem;color:var(--suave)}
+#toast{position:fixed;left:50%;bottom:20px;transform:translateX(-50%);background:var(--tinta);color:#fff;padding:10px 18px;border-radius:99px;font-weight:500;opacity:0;pointer-events:none;transition:opacity .2s;z-index:50}
+#toast.on{opacity:1}
+#erro{display:none;margin-bottom:16px}
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)}
+</style>
+</head>
+<body>
+
+<header class="wrap">
+  <h1 id="titulo">25 anos da Isabelly</h1>
+  <div class="sub" id="subtitulo"></div>
+  <div class="toprow"><div class="dots" id="dots" aria-hidden="true"></div><span id="sync" role="status"></span></div>
+</header>
+
+<nav aria-label="Seções">
+  <div class="wrap" role="tablist">
+    <button role="tab" data-tab="inicio">Início</button>
+    <button role="tab" data-tab="orcamento">Orçamento</button>
+    <button role="tab" data-tab="fornecedores">Fornecedores</button>
+    <button role="tab" data-tab="pendencias">O que falta</button>
+    <button role="tab" data-tab="compras">Compras</button>
+    <button role="tab" data-tab="ideia">Moodboard</button>
+    <button role="tab" data-tab="ajustes">Ajustes</button>
+  </div>
+</nav>
+
+<main class="wrap">
+  <div id="erro" class="alerta"></div>
+
+  <section id="inicio">
+    <div class="grid g2">
+      <div class="card count">
+        <div class="lbl">Faltam</div>
+        <div class="big" id="contagem"></div>
+        <div class="u" id="datatexto" style="margin-top:10px"></div>
+      </div>
+      <div class="card">
+        <div class="card-h"><h3>A festa</h3><button class="lnk" data-acao="edit-festa">Editar</button></div>
+        <dl class="info" id="info"></dl>
+      </div>
+    </div>
+    <div class="alerta" id="alergia" style="margin-top:16px"></div>
+    <div class="grid g3" style="margin-top:16px">
+      <div class="card"><div class="muted small">Orçamento estimado</div><div class="money" id="r-total"></div><div class="muted small" id="r-teto"></div></div>
+      <div class="card"><div class="muted small">O que falta fazer</div><div class="money" id="r-pend"></div><div class="muted small">tarefas abertas</div></div>
+      <div class="card"><div class="muted small">Compras</div><div class="money" id="r-comp"></div><div class="muted small">itens ainda para comprar</div></div>
+    </div>
+  </section>
+
+  <section id="orcamento" hidden>
+    <div class="sec-h"><h2>Orçamento</h2><button class="btn" data-acao="add-orc">Adicionar item</button></div>
+    <div class="grid g2">
+      <div class="card">
+        <div class="muted small">Total estimado</div>
+        <div class="money" id="o-total"></div>
+        <div class="bar" id="o-bar"></div>
+        <div class="legend"><span><b style="background:var(--rosa)"></b>Mínimo</span><span><b style="background:var(--rosa-claro)"></b>Até o máximo</span><span><b style="background:var(--tinta)"></b>Teto</span></div>
+        <p class="small muted" id="o-nota" style="margin:10px 0 0"></p>
+      </div>
+      <div class="card">
+        <h3>Quem paga</h3>
+        <dl class="info" id="o-quem"></dl>
+      </div>
+    </div>
+    <div class="tablebox" style="margin-top:16px">
+      <table>
+        <thead><tr><th>Item</th><th>Fornecedor</th><th class="num">Valor (R$)</th><th>Quem paga</th><th>Situação</th><th><span class="sr">Ações</span></th></tr></thead>
+        <tbody id="o-linhas"></tbody>
+        <tfoot><tr><td colspan="2">Total</td><td class="num" id="o-soma"></td><td colspan="3"></td></tr></tfoot>
+      </table>
+    </div>
+  </section>
+
+  <section id="fornecedores" hidden>
+    <div class="sec-h"><h2>Fornecedores e comparações</h2><button class="btn" data-acao="add-cat">Nova categoria</button></div>
+    <div id="f-lista"></div>
+  </section>
+
+  <section id="pendencias" hidden>
+    <h2>O que falta</h2>
+    <div class="grid g2" id="p-lista"></div>
+  </section>
+
+  <section id="compras" hidden>
+    <h2>Compras por fora</h2>
+    <div class="grid g2" id="c-lista"></div>
+  </section>
+
+  <section id="ideia" hidden>
+    <h2>Moodboard</h2>
+    <div class="card mood"><a href="img/moodboard.jpg" target="_blank" rel="noopener"><img src="img/moodboard.jpg" alt="Moodboard da festa com referências de mesa, balões, flores e fotos de infância" loading="lazy"></a><p class="small muted" style="margin:10px 0 0">Toque na imagem para abrir em tamanho grande.</p></div>
+    <h2 style="margin-top:28px">Paleta</h2>
+    <div class="pal" id="paleta"></div>
+    <div class="grid g2" style="margin-top:16px">
+      <div class="card"><h3>Já decidido</h3><ul class="check" id="decisoes"></ul><form class="add" data-add="decisoes"><input class="f" placeholder="Nova decisão" aria-label="Nova decisão"><button class="btn mini">Adicionar</button></form></div>
+      <div class="card"><h3>Links</h3><ul class="plain" id="links"></ul><p class="small muted" id="dress" style="margin-bottom:0"></p></div>
+    </div>
+  </section>
+
+  <section id="ajustes" hidden>
+    <h2>Sincronizar celular e computador</h2>
+    <div class="card">
+      <p class="muted" style="margin-top:0">Tudo que você muda no site fica salvo num <b>Gist privado</b> do seu GitHub. Configure uma vez em cada aparelho com o mesmo token. Pode ser o mesmo token que você já usa no VAT2 Estudos.</p>
+      <ol class="passos">
+        <li>No GitHub: <a href="https://github.com/settings/tokens/new?scopes=gist&description=festa-25-anos" target="_blank" rel="noopener">Settings, Tokens (classic), Generate new token</a>.</li>
+        <li>Marque <b>só</b> a permissão <b>gist</b>, escolha a validade e gere.</li>
+        <li>Cole o token aqui. Ele fica salvo apenas neste aparelho.</li>
+      </ol>
+      <label class="f" for="tok">Token</label>
+      <input class="f" id="tok" type="password" autocomplete="off" placeholder="ghp_...">
+      <div class="actions" id="sync-btns"></div>
+      <p class="muted" id="sync-info"></p>
+    </div>
+    <h2 style="margin-top:28px">Backup manual</h2>
+    <div class="card">
+      <p class="muted" style="margin-top:0">Gere o código para guardar uma cópia. Para restaurar, cole o código e toque em Importar. Isso substitui os dados atuais.</p>
+      <textarea class="f" id="bk" aria-label="Código de backup"></textarea>
+      <div class="actions"><button class="btn" id="exp">Gerar código</button><button class="btn" id="imp">Importar</button></div>
+    </div>
+    <h2 style="margin-top:28px">Voltar ao original</h2>
+    <div class="card">
+      <p class="muted" style="margin-top:0">Descarta as mudanças feitas no site e carrega de novo o arquivo dados.json do repositório.</p>
+      <button class="btn perigo" id="reset">Voltar ao dados.json</button>
+    </div>
+  </section>
+</main>
+
+<dialog id="dlg"><form method="dialog" id="dlg-form"></form></dialog>
+<div id="toast" role="status"></div>
+
+<script>
+const LS = 'festa25-dados', LS_SYNC = 'festa25-sync', GIST_FILE = 'festa-25-anos.json';
+const STATUS = ['fechado', 'recebido', 'estimativa', 'aguardando', 'a pedir', 'descartado'];
+let D = null;
+
+const brl = n => (+n || 0).toLocaleString('pt-BR', {maximumFractionDigits: 2});
+const faixa = (a, b) => a === b ? brl(a) : brl(a) + ' a ' + brl(b);
+const esc = s => String(s ?? '').replace(/[&<>"]/g, c => ({'&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;'}[c]));
+const slug = s => String(s).toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g, '').replace(/\s+/g, '-');
+const num = v => { if (v === '' || v == null) return null; const n = parseFloat(String(v).replace(/\s|R\$/g, '').replace(/\.(?=\d{3}(\D|$))/g, '').replace(',', '.')); return isNaN(n) ? null : n; };
+const linhas = t => String(t || '').split('\n').map(s => s.trim()).filter(Boolean);
+const $ = id => document.getElementById(id);
+function toast(t) { const el = $('toast'); el.textContent = t; el.classList.add('on'); clearTimeout(toast._t); toast._t = setTimeout(() => el.classList.remove('on'), 2200); }
+
+/* ---------- abas ---------- */
+const ABAS = [...document.querySelectorAll('nav button')];
+function mostrar(nome) {
+  if (!ABAS.some(b => b.dataset.tab === nome)) nome = 'inicio';
+  ABAS.forEach(b => b.setAttribute('aria-selected', b.dataset.tab === nome));
+  document.querySelectorAll('main > section').forEach(s => s.hidden = s.id !== nome);
+  if (nome === 'ajustes') telaAjustes();
+}
+ABAS.forEach(b => b.addEventListener('click', () => { history.replaceState(null, '', '#' + b.dataset.tab); mostrar(b.dataset.tab); window.scrollTo({top: 0}); }));
+window.addEventListener('hashchange', () => mostrar(location.hash.slice(1)));
+
+/* ---------- contagem ---------- */
+function tick() {
+  if (!D) return;
+  const alvo = new Date(D.festa.inicio).getTime();
+  let d = Math.max(0, alvo - Date.now());
+  const dias = Math.floor(d / 864e5); d -= dias * 864e5;
+  const h = Math.floor(d / 36e5); d -= h * 36e5;
+  const m = Math.floor(d / 6e4);
+  $('contagem').innerHTML = alvo <= Date.now() ? '<div class="n">É hoje!</div>'
+    : [[dias, dias === 1 ? 'dia' : 'dias'], [h, h === 1 ? 'hora' : 'horas'], [m, 'min']]
+        .map(([n, u]) => `<div class="unit"><span class="n">${n}</span><span class="u">${u}</span></div>`).join('');
+}
+setInterval(tick, 30000);
+
+/* ---------- desenhar ---------- */
+function dataLonga(iso) {
+  const d = new Date(iso);
+  const dia = d.toLocaleDateString('pt-BR', {weekday: 'long', day: 'numeric', month: 'long', year: 'numeric'});
+  const h = d.toLocaleTimeString('pt-BR', {hour: '2-digit', minute: '2-digit'}).replace(':00', 'h').replace(':', 'h');
+  return dia.charAt(0).toUpperCase() + dia.slice(1) + ', às ' + h;
+}
+
+function checklist(lista, alvo) {
+  let abertos = 0;
+  alvo.innerHTML = D[lista].map((g, gi) => {
+    const feitos = g.itens.filter(i => i.feito).length;
+    abertos += g.itens.length - feitos;
+    return `<div class="card"><div class="prog"><h3>${esc(g.grupo)}</h3><b>${feitos}/${g.itens.length}</b></div>
+      <ul class="check">${g.itens.map((i, ii) => `<li class="${i.feito ? 'feito' : ''}">
+        <button class="tog" data-acao="toggle" data-lista="${lista}" data-g="${gi}" data-i="${ii}" aria-pressed="${!!i.feito}"><span class="box" aria-hidden="true"></span><span class="t">${esc(i.texto)}</span></button>
+        <button class="del" data-acao="del-item" data-lista="${lista}" data-g="${gi}" data-i="${ii}" aria-label="Apagar ${esc(i.texto)}">&times;</button></li>`).join('')}</ul>
+      <form class="add" data-add="${lista}" data-g="${gi}"><input class="f" placeholder="Novo item" aria-label="Novo item em ${esc(g.grupo)}"><button class="btn mini">Adicionar</button></form></div>`;
+  }).join('');
+  return abertos;
+}
+
+function render() {
+  const f = D.festa;
+  document.title = f.titulo;
+  $('titulo').textContent = f.titulo;
+  $('subtitulo').textContent = f.subtitulo + ' · ' + new Date(f.inicio).toLocaleDateString('pt-BR', {day: 'numeric', month: 'long', year: 'numeric'});
+  $('dots').innerHTML = D.paleta.map(p => `<span style="background:${esc(p.hex)}"></span>`).join('');
+  $('datatexto').textContent = dataLonga(f.inicio);
+  tick();
+  $('info').innerHTML = [
+    ['Local', f.local + (f.local_detalhe ? '. ' + f.local_detalhe : '')],
+    ['Formato', f.formato],
+    ['Convidados', `${f.convidados.com_pais} se os pais vierem, ${f.convidados.sem_pais} se não`],
+    ['Dress code', f.dress_code]
+  ].map(([a, b]) => `<dt>${a}</dt><dd>${esc(b)}</dd>`).join('');
+  $('alergia').textContent = f.alergia;
+  $('alergia').hidden = !f.alergia;
+
+  // orçamento
+  const ativos = D.orcamento.filter(o => o.status !== 'descartado');
+  const min = ativos.reduce((s, o) => s + (+o.min || 0), 0);
+  const max = ativos.reduce((s, o) => s + (+o.max || 0), 0);
+  const teto = +f.teto || 0;
+  const tetoTxt = !teto ? 'Sem teto definido' : max <= teto ? `Dentro do teto de R$ ${brl(teto)}` : min > teto ? `R$ ${faixa(min - teto, max - teto)} acima do teto de R$ ${brl(teto)}` : `Pode passar do teto de R$ ${brl(teto)} em até R$ ${brl(max - teto)}`;
+  $('r-total').textContent = 'R$ ' + faixa(min, max);
+  $('o-total').textContent = 'R$ ' + faixa(min, max);
+  $('r-teto').textContent = tetoTxt;
+  $('o-nota').textContent = `${tetoTxt}. Conta feita para ${f.convidados.usar} pessoas. Itens em estimativa ainda não têm orçamento.`;
+  const escala = Math.max(max, teto, 1) * 1.05;
+  $('o-bar').innerHTML = `<i class="hi" style="width:${max / escala * 100}%"></i><i class="lo" style="width:${min / escala * 100}%"></i>${teto ? `<span class="teto" style="left:${teto / escala * 100}%"></span>` : ''}`;
+  const quem = {};
+  ativos.forEach(o => { const q = o.paga || 'A definir'; quem[q] = quem[q] || [0, 0]; quem[q][0] += +o.min || 0; quem[q][1] += +o.max || 0; });
+  $('o-quem').innerHTML = Object.entries(quem).map(([q, [a, b]]) => `<dt>${esc(q)}</dt><dd><b>R$ ${faixa(a, b)}</b></dd>`).join('');
+  $('o-linhas').innerHTML = D.orcamento.map((o, i) => `<tr><td><b>${esc(o.item)}</b>${o.nota ? `<div class="small muted">${esc(o.nota)}</div>` : ''}</td><td>${esc(o.fornecedor)}</td><td class="num">${faixa(+o.min || 0, +o.max || 0)}</td><td>${esc(o.paga)}</td><td><span class="chip st-${slug(o.status)}">${esc(o.status)}</span></td><td><button class="lnk" data-acao="edit-orc" data-i="${i}">Editar</button></td></tr>`).join('');
+  $('o-soma').textContent = faixa(min, max);
+
+  // fornecedores
+  $('f-lista').innerHTML = D.fornecedores.map((c, ci) => `
+    <div class="cat-h"><h3>${esc(c.categoria)}</h3><div><button class="lnk" data-acao="edit-cat" data-c="${ci}">Renomear</button><button class="btn mini" data-acao="add-forn" data-c="${ci}">Adicionar orçamento</button></div></div>
+    <div class="grid g2">${c.opcoes.map((o, oi) => `
+    <div class="card forn">
+      <div class="card-h"><h3>${esc(o.nome)}</h3><span class="chip st-${slug(o.status)}">${esc(o.status)}</span></div>
+      ${o.valor != null ? `<div class="val">R$ ${brl(o.valor)}${o.valor_cheio ? ` <span class="small muted" style="text-decoration:line-through">R$ ${brl(o.valor_cheio)}</span>` : ''}</div>` : '<div class="muted">Sem valor ainda</div>'}
+      ${o.valor != null && o.pessoas ? `<div class="small muted">R$ ${brl(Math.round(o.valor / o.pessoas * 100) / 100)} por pessoa (${o.pessoas} pessoas)</div>` : ''}
+      ${o.contato ? `<div class="small" style="margin-top:6px">Contato: ${esc(o.contato)}</div>` : ''}
+      ${(o.inclui || []).length ? `<div class="lab">Inclui</div><ul>${o.inclui.map(i => `<li>${esc(i)}</li>`).join('')}</ul>` : ''}
+      ${(o.nao_inclui || []).length ? `<div class="lab">Não inclui</div><ul class="no">${o.nao_inclui.map(i => `<li>${esc(i)}</li>`).join('')}</ul>` : ''}
+      ${o.obs ? `<p class="small muted" style="margin:8px 0 0">${esc(o.obs)}</p>` : ''}
+      <div class="actions" style="margin-top:10px"><button class="lnk" data-acao="edit-forn" data-c="${ci}" data-o="${oi}">Editar</button></div>
+    </div>`).join('') || '<p class="muted">Nenhum orçamento ainda.</p>'}</div>`).join('');
+
+  $('r-pend').textContent = checklist('pendencias', $('p-lista'));
+  $('r-comp').textContent = checklist('compras', $('c-lista'));
+
+  $('paleta').innerHTML = D.paleta.map(p => `<div><span style="background:${esc(p.hex)}"></span><p>${esc(p.nome)}<br><small>${esc(p.hex)}</small></p></div>`).join('');
+  $('decisoes').innerHTML = D.decisoes.map((x, i) => `<li><span class="t" style="flex:1;padding:10px 0">${esc(x)}</span><button class="del" data-acao="del-dec" data-i="${i}" aria-label="Apagar ${esc(x)}">&times;</button></li>`).join('');
+  $('links').innerHTML = D.links.map(l => `<li><a href="${esc(l.url)}" target="_blank" rel="noopener">${esc(l.nome)}</a></li>`).join('');
+  $('dress').textContent = 'Dress code: ' + f.dress_code;
+}
+
+/* ---------- salvar ---------- */
+function salvar(msg) {
+  D.atualizado = Date.now();
+  try { localStorage.setItem(LS, JSON.stringify(D)); } catch (e) {}
+  render();
+  Sync.agendar();
+  if (msg) toast(msg);
+}
+
+/* ---------- janela de edição ---------- */
+function editar(titulo, campos, val, podeApagar) {
+  const dlg = $('dlg'), form = $('dlg-form');
+  const campo = c => {
+    const v = val[c.k] ?? '';
+    const id = 'c-' + c.k;
+    let input;
+    if (c.tipo === 'textarea') input = `<textarea class="f" id="${id}" name="${c.k}">${esc(Array.isArray(v) ? v.join('\n') : v)}</textarea>`;
+    else if (c.tipo === 'select') input = `<select class="f" id="${id}" name="${c.k}">${c.opcoes.map(o => `<option${o === v ? ' selected' : ''}>${esc(o)}</option>`).join('')}</select>`;
+    else input = `<input class="f" id="${id}" name="${c.k}" type="${c.tipo === 'datetime' ? 'datetime-local' : 'text'}" ${c.tipo === 'number' ? 'inputmode="decimal"' : ''} value="${esc(c.tipo === 'number' && v !== '' && v != null ? String(v).replace('.', ',') : v)}">`;
+    return `<div${c.largo ? ' style="grid-column:1/-1"' : ''}><label class="f" for="${id}">${esc(c.label)}</label>${input}${c.dica ? `<div class="small muted" style="margin-top:4px">${esc(c.dica)}</div>` : ''}</div>`;
+  };
+  form.innerHTML = `<h3>${esc(titulo)}</h3><div class="campos2">${campos.map(campo).join('')}</div>
+    <div class="dlg-act">${podeApagar ? '<button class="btn perigo esq" value="apagar">Apagar</button>' : ''}<button class="btn" value="cancelar" formnovalidate>Cancelar</button><button class="btn pri" value="salvar">Salvar</button></div>`;
+  return new Promise(res => {
+    dlg.onclose = () => {
+      if (dlg.returnValue === 'apagar') { if (confirm('Apagar mesmo?')) return res({apagar: true}); return res(null); }
+      if (dlg.returnValue !== 'salvar') return res(null);
+      const out = {};
+      campos.forEach(c => {
+        const v = form.elements[c.k].value;
+        out[c.k] = c.tipo === 'number' ? num(v) : c.tipo === 'textarea' && c.lista ? linhas(v) : v.trim();
+      });
+      res(out);
+    };
+    dlg.returnValue = '';
+    dlg.showModal();
+  });
+}
+
+const CAMPOS_ORC = [
+  {k: 'item', label: 'Item', largo: true},
+  {k: 'fornecedor', label: 'Fornecedor'},
+  {k: 'paga', label: 'Quem paga'},
+  {k: 'min', label: 'Valor mínimo (R$)', tipo: 'number'},
+  {k: 'max', label: 'Valor máximo (R$)', tipo: 'number', dica: 'Se for valor fechado, repita o mínimo'},
+  {k: 'status', label: 'Situação', tipo: 'select', opcoes: STATUS},
+  {k: 'nota', label: 'Observação', tipo: 'textarea', largo: true}
+];
+const CAMPOS_FORN = [
+  {k: 'nome', label: 'Nome', largo: true},
+  {k: 'contato', label: 'Contato'},
+  {k: 'status', label: 'Situação', tipo: 'select', opcoes: STATUS},
+  {k: 'valor', label: 'Valor (R$)', tipo: 'number'},
+  {k: 'valor_cheio', label: 'Valor sem desconto (R$)', tipo: 'number'},
+  {k: 'pessoas', label: 'Para quantas pessoas', tipo: 'number'},
+  {k: 'inclui', label: 'Inclui (um por linha)', tipo: 'textarea', lista: true, largo: true},
+  {k: 'nao_inclui', label: 'Não inclui (um por linha)', tipo: 'textarea', lista: true, largo: true},
+  {k: 'obs', label: 'Observações', tipo: 'textarea', largo: true}
+];
+
+async function acao(el) {
+  const a = el.dataset.acao, g = +el.dataset.g, i = +el.dataset.i, c = +el.dataset.c, o = +el.dataset.o, lista = el.dataset.lista;
+  if (a === 'toggle') { const it = D[lista][g].itens[i]; it.feito = !it.feito; salvar(); return; }
+  if (a === 'del-item') { if (confirm('Apagar "' + D[lista][g].itens[i].texto + '"?')) { D[lista][g].itens.splice(i, 1); salvar('Item apagado'); } return; }
+  if (a === 'del-dec') { if (confirm('Apagar esta decisão?')) { D.decisoes.splice(i, 1); salvar(); } return; }
+  if (a === 'edit-orc' || a === 'add-orc') {
+    const novo = a === 'add-orc';
+    const r = await editar(novo ? 'Novo item do orçamento' : 'Editar orçamento', CAMPOS_ORC, novo ? {status: 'estimativa', paga: 'Isabelly'} : D.orcamento[i], !novo);
+    if (!r) return;
+    if (r.apagar) D.orcamento.splice(i, 1);
+    else { r.min = r.min ?? 0; r.max = r.max ?? r.min; if (r.max < r.min) [r.min, r.max] = [r.max, r.min]; if (novo) D.orcamento.push(r); else Object.assign(D.orcamento[i], r); }
+    salvar('Orçamento salvo'); return;
+  }
+  if (a === 'edit-forn' || a === 'add-forn') {
+    const novo = a === 'add-forn';
+    const r = await editar(novo ? 'Novo orçamento: ' + D.fornecedores[c].categoria : 'Editar fornecedor', CAMPOS_FORN, novo ? {status: 'recebido', pessoas: D.festa.convidados.usar} : D.fornecedores[c].opcoes[o], !novo);
+    if (!r) return;
+    if (r.apagar) D.fornecedores[c].opcoes.splice(o, 1);
+    else if (novo) D.fornecedores[c].opcoes.push(r);
+    else Object.assign(D.fornecedores[c].opcoes[o], r);
+    salvar('Fornecedor salvo'); return;
+  }
+  if (a === 'add-cat' || a === 'edit-cat') {
+    const novo = a === 'add-cat';
+    const r = await editar(novo ? 'Nova categoria' : 'Renomear categoria', [{k: 'categoria', label: 'Nome da categoria', largo: true}], novo ? {} : D.fornecedores[c], !novo);
+    if (!r) return;
+    if (r.apagar) D.fornecedores.splice(c, 1);
+    else if (!r.categoria) return;
+    else if (novo) D.fornecedores.push({categoria: r.categoria, opcoes: []});
+    else D.fornecedores[c].categoria = r.categoria;
+    salvar(); return;
+  }
+  if (a === 'edit-festa') {
+    const f = D.festa;
+    const val = Object.assign({}, f, {inicio: f.inicio.slice(0, 16), com_pais: f.convidados.com_pais, sem_pais: f.convidados.sem_pais, usar: f.convidados.usar});
+    const r = await editar('A festa', [
+      {k: 'inicio', label: 'Data e hora', tipo: 'datetime', largo: true},
+      {k: 'local', label: 'Local', largo: true},
+      {k: 'local_detalhe', label: 'Sobre o local', largo: true},
+      {k: 'formato', label: 'Formato', tipo: 'textarea', largo: true},
+      {k: 'com_pais', label: 'Convidados se os pais vierem', tipo: 'number'},
+      {k: 'sem_pais', label: 'Convidados se não vierem', tipo: 'number'},
+      {k: 'usar', label: 'Número usado nas contas', tipo: 'number'},
+      {k: 'teto', label: 'Teto do orçamento (R$)', tipo: 'number'},
+      {k: 'dress_code', label: 'Dress code', tipo: 'textarea', largo: true},
+      {k: 'alergia', label: 'Aviso de alergia', tipo: 'textarea', largo: true}
+    ], val, false);
+    if (!r) return;
+    Object.assign(f, {local: r.local, local_detalhe: r.local_detalhe, formato: r.formato, teto: r.teto ?? f.teto, dress_code: r.dress_code, alergia: r.alergia});
+    if (r.inicio) f.inicio = r.inicio + ':00-03:00';
+    f.convidados = {com_pais: r.com_pais ?? f.convidados.com_pais, sem_pais: r.sem_pais ?? f.convidados.sem_pais, usar: r.usar ?? f.convidados.usar};
+    salvar('Festa atualizada');
+  }
+}
+document.addEventListener('click', e => { const el = e.target.closest('[data-acao]'); if (el) { e.preventDefault(); acao(el); } });
+document.addEventListener('submit', e => {
+  const form = e.target.closest('form[data-add]'); if (!form) return;
+  e.preventDefault();
+  const t = form.querySelector('input').value.trim(); if (!t) return;
+  if (form.dataset.add === 'decisoes') D.decisoes.push(t);
+  else D[form.dataset.add][+form.dataset.g].itens.push({texto: t, feito: false});
+  salvar('Item adicionado');
+});
+
+/* ---------- sincronização com Gist (igual ao VAT2 Estudos) ---------- */
+const Sync = {
+  cfg() { try { return JSON.parse(localStorage.getItem(LS_SYNC)) || {}; } catch (e) { return {}; } },
+  salvarCfg(c) { try { localStorage.setItem(LS_SYNC, JSON.stringify(Object.assign(this.cfg(), c))); } catch (e) {} },
+  status(t) { $('sync').textContent = t; },
+  async api(caminho, opt = {}) {
+    const r = await fetch('https://api.github.com' + caminho, Object.assign({cache: 'no-store'}, opt, {
+      headers: {Authorization: 'Bearer ' + this.cfg().token, Accept: 'application/vnd.github+json', 'Content-Type': 'application/json'}
+    }));
+    if (!r.ok) throw new Error('GitHub ' + r.status);
+    return r.json();
+  },
+  async acharGist() {
+    for (let p = 1; p <= 5; p++) {
+      const lista = await this.api('/gists?per_page=100&page=' + p);
+      const g = lista.find(x => x.files && x.files[GIST_FILE]);
+      if (g) return g.id;
+      if (lista.length < 100) break;
+    }
+    return null;
+  },
+  async ler(id) {
+    const g = await this.api('/gists/' + id);
+    const f = g.files[GIST_FILE]; if (!f) return null;
+    let txt = f.content;
+    if (f.truncated) txt = await (await fetch(f.raw_url)).text();
+    return JSON.parse(txt);
+  },
+  async agora(avisar) {
+    const c = this.cfg(); if (!c.token) return;
+    clearTimeout(this._t);
+    this.status('Sincronizando...');
+    try {
+      let id = c.gist || await this.acharGist();
+      const remoto = id ? await this.ler(id) : null;
+      if (remoto && (remoto.atualizado || 0) > (D.atualizado || 0)) {
+        D = remoto;
+        try { localStorage.setItem(LS, JSON.stringify(D)); } catch (e) {}
+        render();
+      } else if (!remoto || (D.atualizado || 0) > (remoto.atualizado || 0)) {
+        const files = {[GIST_FILE]: {content: JSON.stringify(D)}};
+        if (id) await this.api('/gists/' + id, {method: 'PATCH', body: JSON.stringify({files})});
+        else id = (await this.api('/gists', {method: 'POST', body: JSON.stringify({description: 'Dados do site da festa de 25 anos', public: false, files})})).id;
+      }
+      this.salvarCfg({gist: id, ultimo: Date.now()});
+      this.status('Sincronizado');
+      if (avisar) toast('Sincronizado');
+    } catch (e) {
+      this.status('Sem sincronizar');
+      if (avisar) toast(String(e.message).includes('401') ? 'Token inválido ou expirado' : 'Não deu para sincronizar agora');
+    }
+    if (!$('ajustes').hidden) telaAjustes();
+  },
+  agendar() {
+    if (!this.cfg().token) { this.status('Salvo só neste aparelho'); return; }
+    clearTimeout(this._t); this.status('Alterações para salvar...');
+    this._t = setTimeout(() => this.agora(false), 2500);
+  }
+};
+
+function telaAjustes() {
+  const cfg = Sync.cfg();
+  $('tok').value = cfg.token ? '••••••••' : '';
+  $('sync-btns').innerHTML = `<button class="btn pri" id="conectar">${cfg.token ? 'Salvar e sincronizar' : 'Conectar'}</button>` +
+    (cfg.token ? '<button class="btn" id="agora">Sincronizar agora</button><button class="btn" id="sair">Desconectar</button>' : '');
+  $('sync-info').textContent = cfg.token
+    ? 'Conectado' + (cfg.ultimo ? '. Última sincronização: ' + new Date(cfg.ultimo).toLocaleString('pt-BR') : '')
+    : 'Não conectado: as mudanças ficam só neste aparelho.';
+  $('conectar').onclick = async () => {
+    const v = $('tok').value.trim();
+    if (v && !v.startsWith('•')) Sync.salvarCfg({token: v, gist: null});
+    if (!Sync.cfg().token) { toast('Cole o token primeiro'); return; }
+    await Sync.agora(true);
+  };
+  if ($('agora')) $('agora').onclick = () => Sync.agora(true);
+  if ($('sair')) $('sair').onclick = () => { try { localStorage.removeItem(LS_SYNC); } catch (e) {} Sync.status('Salvo só neste aparelho'); telaAjustes(); };
+}
+$('exp').onclick = () => { $('bk').value = btoa(unescape(encodeURIComponent(JSON.stringify(D)))); $('bk').select(); toast('Código gerado'); };
+$('imp').onclick = () => {
+  try { const o = JSON.parse(decodeURIComponent(escape(atob($('bk').value.trim())))); if (!o.festa) throw 0; if (!confirm('Substituir os dados atuais por este backup?')) return; D = o; salvar('Backup importado'); }
+  catch (e) { toast('Código inválido'); }
+};
+$('reset').onclick = async () => {
+  if (!confirm('Descartar as mudanças feitas no site e voltar ao dados.json?')) return;
+  D = await (await fetch('dados.json', {cache: 'no-store'})).json();
+  salvar('Dados originais carregados');
+};
+
+/* ---------- início ---------- */
+(async () => {
+  let base = null, local = null;
+  try { local = JSON.parse(localStorage.getItem(LS)); } catch (e) {}
+  try { const r = await fetch('dados.json', {cache: 'no-store'}); if (r.ok) base = await r.json(); } catch (e) {}
+  D = local && (!base || (local.atualizado || 0) >= (base.atualizado || 0)) ? local : base;
+  if (!D) { $('erro').style.display = 'block'; $('erro').textContent = 'Não consegui ler o dados.json. Se abriu o arquivo direto do computador, use o link do GitHub Pages.'; return; }
+  render();
+  mostrar(location.hash.slice(1));
+  if (Sync.cfg().token) Sync.agora(false); else Sync.status('Salvo só neste aparelho');
+  document.addEventListener('visibilitychange', () => { if (document.visibilityState === 'visible') Sync.agora(false); });
+})();
+</script>
+</body>
+</html>

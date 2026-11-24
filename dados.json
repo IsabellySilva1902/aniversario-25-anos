@@ -1,0 +1,484 @@
+{
+  "atualizado": 1795547200022,
+  "festa": {
+    "titulo": "25 anos da Isabelly",
+    "subtitulo": "Chá da tarde de aniversário",
+    "inicio": "2027-02-20T16:00:00-03:00",
+    "local": "Salão de festas do condomínio, bairro Sim, Feira de Santana",
+    "local_detalhe": "Pequeno, climatizado, com freezer e tomada para fritadeira",
+    "formato": "Café da tarde no estilo brunch, íntimo e descontraído, com mesa bonita para todos se servirem e garçom servindo bebidas e salgados fritos na hora",
+    "convidados": {
+      "com_pais": 17,
+      "sem_pais": 13,
+      "usar": 17
+    },
+    "teto": 5000,
+    "alergia": "Uma convidada é alérgica a camarão. Nada de camarão no cardápio.",
+    "dress_code": "Convidados em tons de rosa, vermelho ou coral. A aniversariante vai de branco."
+  },
+  "paleta": [
+    {
+      "nome": "Rosa choque",
+      "hex": "#E6358A"
+    },
+    {
+      "nome": "Rosa claro",
+      "hex": "#F4A6C4"
+    },
+    {
+      "nome": "Vermelho",
+      "hex": "#D62839"
+    },
+    {
+      "nome": "Coral",
+      "hex": "#FF7F6B"
+    },
+    {
+      "nome": "Amarelo",
+      "hex": "#FFD66B"
+    },
+    {
+      "nome": "Creme",
+      "hex": "#FBF1E3"
+    },
+    {
+      "nome": "Verde oliva",
+      "hex": "#4F6B4A"
+    },
+    {
+      "nome": "Branco",
+      "hex": "#FFFFFF"
+    }
+  ],
+  "orcamento": [
+    {
+      "item": "Buffet",
+      "fornecedor": "Più Buono Gastronomia",
+      "min": 1360,
+      "max": 2040,
+      "paga": "Mãe",
+      "status": "estimativa",
+      "nota": "R$ 80 a 120 por pessoa, aguardando orçamento com e sem flores"
+    },
+    {
+      "item": "Bar de drinks",
+      "fornecedor": "Oliveira Drinks",
+      "min": 1150,
+      "max": 1150,
+      "paga": "Mãe",
+      "status": "recebido",
+      "nota": "Condição especial válida por 15 dias"
+    },
+    {
+      "item": "Fotografia",
+      "fornecedor": "A definir",
+      "min": 450,
+      "max": 450,
+      "paga": "Isabelly",
+      "status": "recebido",
+      "nota": "Promoção só foto. Perguntando pacote com storymaker"
+    },
+    {
+      "item": "Decoração",
+      "fornecedor": "A definir",
+      "min": 1000,
+      "max": 1000,
+      "paga": "Isabelly",
+      "status": "estimativa",
+      "nota": "Comparar com as flores do buffet"
+    },
+    {
+      "item": "Shopee, com a lona",
+      "fornecedor": "Shopee",
+      "min": 750,
+      "max": 750,
+      "paga": "Isabelly",
+      "status": "fechado",
+      "nota": "Lista na aba Compras"
+    },
+    {
+      "item": "Bolo e bem-casados",
+      "fornecedor": "A definir",
+      "min": 400,
+      "max": 600,
+      "paga": "Isabelly",
+      "status": "estimativa",
+      "nota": "Comparar buffet com indicações de Feira"
+    },
+    {
+      "item": "Reserva para imprevistos",
+      "fornecedor": "",
+      "min": 250,
+      "max": 250,
+      "paga": "Isabelly",
+      "status": "estimativa",
+      "nota": ""
+    }
+  ],
+  "fornecedores": [
+    {
+      "categoria": "Buffet",
+      "opcoes": [
+        {
+          "nome": "Più Buono Gastronomia",
+          "contato": "WhatsApp (75) 99263-0530",
+          "valor": null,
+          "pessoas": 17,
+          "status": "aguardando",
+          "inclui": [
+            "Torre de croissants, mini sanduíches, quiches e doces na mesa",
+            "Suco natural, água de coco, soda italiana e refrigerante",
+            "1 garçom para bebidas, passando coxinha, bolinha de queijo e mini pastel fritos na hora",
+            "Brigadeiro e uma sobremesa brasileira, como pudim",
+            "Travessas e peças de serviço",
+            "Cardápio todo sem camarão"
+          ],
+          "nao_inclui": [
+            "Pratos, talheres e taças dos convidados"
+          ],
+          "obs": "Vai mandar duas opções, com e sem flores na mesa. Pedido: indicação de quem alugue pratos e talheres, mínimo de pessoas, valor do bolo e horário às 16h."
+        }
+      ]
+    },
+    {
+      "categoria": "Bar de drinks",
+      "opcoes": [
+        {
+          "nome": "Oliveira Drinks",
+          "contato": "Samuel",
+          "valor": 1150,
+          "valor_cheio": 1270,
+          "pessoas": 17,
+          "status": "recebido",
+          "inclui": [
+            "5 horas de serviço e 1 barman",
+            "Taças, copos de vidro e cristais",
+            "Ornamentação, frutas, destilados e insumos",
+            "Balcão, montagem, desmontagem e transporte",
+            "Roskas em 3 sabores e Aperol spritz",
+            "Drink sem álcool (combinado na conversa, pedir no contrato)"
+          ],
+          "nao_inclui": [
+            "20 kg de gelo (a Isabelly leva)"
+          ],
+          "obs": "Sinal de R$ 200, restante até 1 dia antes. Até 10x no crédito. Contrato pelo gov.br. Falta saber o valor para 13 pessoas. Duração definida depois do buffet."
+        }
+      ]
+    },
+    {
+      "categoria": "Fotografia e storymaker",
+      "opcoes": [
+        {
+          "nome": "Empresa de foto e storymaker",
+          "contato": "",
+          "valor": 450,
+          "pessoas": null,
+          "status": "recebido",
+          "inclui": [
+            "Fotografia ilimitada",
+            "Tempo ilimitado"
+          ],
+          "nao_inclui": [
+            "Storymaker (pedindo pacote)"
+          ],
+          "obs": "Promoção para eventos. Perguntar quantas fotos editadas e prazo de entrega."
+        }
+      ]
+    },
+    {
+      "categoria": "Decoração",
+      "opcoes": [
+        {
+          "nome": "Flores da Più Buono",
+          "contato": "",
+          "valor": null,
+          "pessoas": null,
+          "status": "aguardando",
+          "inclui": [
+            "Flores na mesa do chá"
+          ],
+          "nao_inclui": [],
+          "obs": "Vem no orçamento do buffet, opção com flores."
+        },
+        {
+          "nome": "Decoradora",
+          "contato": "",
+          "valor": null,
+          "pessoas": null,
+          "status": "a pedir",
+          "inclui": [
+            "Mesa do bolo, flores, balões"
+          ],
+          "nao_inclui": [],
+          "obs": "Estimativa de R$ 1.000."
+        }
+      ]
+    },
+    {
+      "categoria": "Bolo e bem-casados",
+      "opcoes": [
+        {
+          "nome": "Più Buono",
+          "contato": "",
+          "valor": null,
+          "pessoas": 17,
+          "status": "aguardando",
+          "inclui": [],
+          "nao_inclui": [],
+          "obs": "Ela ofereceu fazer o bolo. Pedido o valor."
+        },
+        {
+          "nome": "Indicações de Feira",
+          "contato": "",
+          "valor": null,
+          "pessoas": 17,
+          "status": "a pedir",
+          "inclui": [],
+          "nao_inclui": [],
+          "obs": "Bolo de 2 a 3 kg. Bem-casados: 3 por pessoa (51 para 17, 39 para 13), já embalados."
+        }
+      ]
+    },
+    {
+      "categoria": "Pratos, talheres e taças",
+      "opcoes": [
+        {
+          "nome": "Indicação da Più Buono",
+          "contato": "",
+          "valor": null,
+          "pessoas": 17,
+          "status": "aguardando",
+          "inclui": [],
+          "nao_inclui": [],
+          "obs": "O buffet não inclui. Esperando indicação."
+        }
+      ]
+    }
+  ],
+  "pendencias": [
+    {
+      "grupo": "Agora (até dezembro)",
+      "itens": [
+        {
+          "texto": "Responder o Samuel: valor para 13 pessoas e drink sem álcool no contrato",
+          "feito": false
+        },
+        {
+          "texto": "Fechar o bar antes de acabar a condição de R$ 1.150, ou pedir para estender",
+          "feito": false
+        },
+        {
+          "texto": "Receber o orçamento da Più Buono, com e sem flores",
+          "feito": false
+        },
+        {
+          "texto": "Mandar o moodboard e a paleta para a Più Buono",
+          "feito": false
+        },
+        {
+          "texto": "Pedir indicação de pratos, talheres e taças",
+          "feito": false
+        },
+        {
+          "texto": "Fotografia: conversar sobre pacote com storymaker",
+          "feito": false
+        },
+        {
+          "texto": "Pedir orçamento de decoradora para comparar com as flores do buffet",
+          "feito": false
+        },
+        {
+          "texto": "Condomínio: reserva, caixa de som, mesas e cadeiras, entrada de fornecedores, gelo no freezer",
+          "feito": false
+        },
+        {
+          "texto": "Decidir se os R$ 5.000 incluem a parte da mãe",
+          "feito": false
+        },
+        {
+          "texto": "Encomendar os personalizados (sousplat, etiquetas)",
+          "feito": false
+        }
+      ]
+    },
+    {
+      "grupo": "Até janeiro",
+      "itens": [
+        {
+          "texto": "Fechar buffet, decoração e fotografia",
+          "feito": false
+        },
+        {
+          "texto": "Definir o tempo do bar igual ao do buffet",
+          "feito": false
+        },
+        {
+          "texto": "Decidir o bolo (Più Buono ou indicação de Feira)",
+          "feito": false
+        },
+        {
+          "texto": "Trocar as artes do Chopper e da Yor na lona e mandar imprimir",
+          "feito": false
+        },
+        {
+          "texto": "Escanear as fotos antigas para a lona e os centros de mesa",
+          "feito": false
+        },
+        {
+          "texto": "Enviar convites com data-limite para confirmar presença",
+          "feito": false
+        },
+        {
+          "texto": "Saber se os pais vêm (17 ou 13 pessoas)",
+          "feito": false
+        }
+      ]
+    },
+    {
+      "grupo": "Fevereiro",
+      "itens": [
+        {
+          "texto": "Confirmar presenças e passar o número final aos fornecedores",
+          "feito": false
+        },
+        {
+          "texto": "Mandar o dress code no grupo",
+          "feito": false
+        },
+        {
+          "texto": "Montar a playlist e testar a caixa de som",
+          "feito": false
+        },
+        {
+          "texto": "Montar as lembrancinhas",
+          "feito": false
+        },
+        {
+          "texto": "Combinar com o fotógrafo a lista de fotos e o parabéns",
+          "feito": false
+        },
+        {
+          "texto": "Roupa, cabelo e maquiagem",
+          "feito": false
+        }
+      ]
+    },
+    {
+      "grupo": "No dia",
+      "itens": [
+        {
+          "texto": "Levar lona, lembrancinhas, porta-retratos, velas e gelo",
+          "feito": false
+        },
+        {
+          "texto": "Receber os fornecedores",
+          "feito": false
+        },
+        {
+          "texto": "Parabéns com o fotógrafo avisado",
+          "feito": false
+        }
+      ]
+    }
+  ],
+  "compras": [
+    {
+      "grupo": "Já comprado ou no carrinho",
+      "itens": [
+        {
+          "texto": "Vela aromática pequena (bambu e chá branco) em caixinha de acrílico",
+          "feito": true
+        },
+        {
+          "texto": "Ecobag pequena",
+          "feito": true
+        },
+        {
+          "texto": "DTF têxtil para a ecobag",
+          "feito": true
+        },
+        {
+          "texto": "Tags de agradecimento",
+          "feito": true
+        },
+        {
+          "texto": "Papel de arroz para os drinks",
+          "feito": true
+        },
+        {
+          "texto": "Lona (a gráfica faz a arte junto)",
+          "feito": true
+        }
+      ]
+    },
+    {
+      "grupo": "Falta comprar",
+      "itens": [
+        {
+          "texto": "Fita de cetim rosa ou coral, 10 a 15 mm, cerca de 30 m",
+          "feito": false
+        },
+        {
+          "texto": "Sousplat personalizado, um por lugar",
+          "feito": false
+        },
+        {
+          "texto": "Porta-retratos (5 ou 6) para os centros de mesa",
+          "feito": false
+        },
+        {
+          "texto": "Velas numerais 2 e 5 e isqueiro",
+          "feito": false
+        },
+        {
+          "texto": "Cabo P2 ou adaptador Bluetooth, se a caixa do salão precisar",
+          "feito": false
+        },
+        {
+          "texto": "Ganchos adesivos ou fita de alta fixação para a lona",
+          "feito": false
+        },
+        {
+          "texto": "20 kg de gelo para o bar (no dia)",
+          "feito": false
+        }
+      ]
+    },
+    {
+      "grupo": "Só se fizer sentido",
+      "itens": [
+        {
+          "texto": "Adesivos para copos, se o bar aceitar",
+          "feito": false
+        },
+        {
+          "texto": "Guardanapos de papel, se o buffet não incluir",
+          "feito": false
+        },
+        {
+          "texto": "Filme instax e tripé de celular",
+          "feito": false
+        }
+      ]
+    }
+  ],
+  "decisoes": [
+    "Convidados sentados em mesas, com foto de infância como centro de mesa",
+    "Som: caixa de som com playlist, sem DJ",
+    "Lembrancinha: ecobag com DTF, vela aromática, tag de agradecimento e os doces e bem-casados da mesa no fim da festa",
+    "Formas de doce brancas e verde oliva, que já estão em casa",
+    "Lona de 1,5 x 2 m com 25 quadros, o 25 no centro e a hashtag #IsaFaz25",
+    "Roupa, cabelo e maquiagem: provavelmente ela mesma faz",
+    "Sem cerejas na decoração"
+  ],
+  "links": [
+    {
+      "nome": "Moodboard no Canva",
+      "url": "https://canva.link/mu4glpmx8uj34nb"
+    },
+    {
+      "nome": "Design da lona",
+      "url": "https://claude.ai/artifact/SzhYV4ByTb1UdUfBmVBbnD"
+    }
+  ]
+}
