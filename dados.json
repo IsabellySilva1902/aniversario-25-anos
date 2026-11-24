@@ -58,7 +58,9 @@
       "max": 2040,
       "paga": "Mãe",
       "status": "estimativa",
-      "nota": "R$ 80 a 120 por pessoa, aguardando orçamento com e sem flores"
+      "nota": "Aguardando orçamento com e sem flores",
+      "pp_min": 80,
+      "pp_max": 120
     },
     {
       "item": "Bar de drinks",
@@ -138,7 +140,8 @@
           ],
           "obs": "Vai mandar duas opções, com e sem flores na mesa. Pedido: indicação de quem alugue pratos e talheres, mínimo de pessoas, valor do bolo e horário às 16h."
         }
-      ]
+      ],
+      "orcamento": "Buffet"
     },
     {
       "categoria": "Bar de drinks",
@@ -161,9 +164,11 @@
           "nao_inclui": [
             "20 kg de gelo (a Isabelly leva)"
           ],
-          "obs": "Sinal de R$ 200, restante até 1 dia antes. Até 10x no crédito. Contrato pelo gov.br. Falta saber o valor para 13 pessoas. Duração definida depois do buffet."
+          "obs": "Sinal de R$ 200, restante até 1 dia antes. Até 10x no crédito. Contrato pelo gov.br. Falta saber o valor para 13 pessoas. Duração definida depois do buffet.",
+          "validade": "2026-12-09"
         }
-      ]
+      ],
+      "orcamento": "Bar de drinks"
     },
     {
       "categoria": "Fotografia e storymaker",
@@ -183,7 +188,8 @@
           ],
           "obs": "Promoção para eventos. Perguntar quantas fotos editadas e prazo de entrega."
         }
-      ]
+      ],
+      "orcamento": "Fotografia"
     },
     {
       "categoria": "Decoração",
@@ -212,7 +218,8 @@
           "nao_inclui": [],
           "obs": "Estimativa de R$ 1.000."
         }
-      ]
+      ],
+      "orcamento": "Decoração"
     },
     {
       "categoria": "Bolo e bem-casados",
@@ -237,7 +244,8 @@
           "nao_inclui": [],
           "obs": "Bolo de 2 a 3 kg. Bem-casados: 3 por pessoa (51 para 17, 39 para 13), já embalados."
         }
-      ]
+      ],
+      "orcamento": "Bolo e bem-casados"
     },
     {
       "categoria": "Pratos, talheres e taças",
@@ -252,7 +260,8 @@
           "nao_inclui": [],
           "obs": "O buffet não inclui. Esperando indicação."
         }
-      ]
+      ],
+      "orcamento": "Pratos, talheres e taças"
     }
   ],
   "pendencias": [
@@ -261,43 +270,53 @@
       "itens": [
         {
           "texto": "Responder o Samuel: valor para 13 pessoas e drink sem álcool no contrato",
-          "feito": false
+          "feito": false,
+          "prazo": "2026-11-28"
         },
         {
           "texto": "Fechar o bar antes de acabar a condição de R$ 1.150, ou pedir para estender",
-          "feito": false
+          "feito": false,
+          "prazo": "2026-12-09"
         },
         {
           "texto": "Receber o orçamento da Più Buono, com e sem flores",
-          "feito": false
+          "feito": false,
+          "prazo": "2026-12-01"
         },
         {
           "texto": "Mandar o moodboard e a paleta para a Più Buono",
-          "feito": false
+          "feito": false,
+          "prazo": "2026-11-26"
         },
         {
           "texto": "Pedir indicação de pratos, talheres e taças",
-          "feito": false
+          "feito": false,
+          "prazo": "2026-12-05"
         },
         {
           "texto": "Fotografia: conversar sobre pacote com storymaker",
-          "feito": false
+          "feito": false,
+          "prazo": "2026-11-30"
         },
         {
           "texto": "Pedir orçamento de decoradora para comparar com as flores do buffet",
-          "feito": false
+          "feito": false,
+          "prazo": "2026-12-05"
         },
         {
           "texto": "Condomínio: reserva, caixa de som, mesas e cadeiras, entrada de fornecedores, gelo no freezer",
-          "feito": false
+          "feito": false,
+          "prazo": "2026-12-05"
         },
         {
           "texto": "Decidir se os R$ 5.000 incluem a parte da mãe",
-          "feito": false
+          "feito": false,
+          "prazo": "2026-12-01"
         },
         {
           "texto": "Encomendar os personalizados (sousplat, etiquetas)",
-          "feito": false
+          "feito": false,
+          "prazo": "2026-12-15"
         }
       ]
     },
@@ -306,31 +325,38 @@
       "itens": [
         {
           "texto": "Fechar buffet, decoração e fotografia",
-          "feito": false
+          "feito": false,
+          "prazo": "2027-01-15"
         },
         {
           "texto": "Definir o tempo do bar igual ao do buffet",
-          "feito": false
+          "feito": false,
+          "prazo": "2027-01-15"
         },
         {
           "texto": "Decidir o bolo (Più Buono ou indicação de Feira)",
-          "feito": false
+          "feito": false,
+          "prazo": "2027-01-15"
         },
         {
           "texto": "Trocar as artes do Chopper e da Yor na lona e mandar imprimir",
-          "feito": false
+          "feito": false,
+          "prazo": "2027-01-15"
         },
         {
           "texto": "Escanear as fotos antigas para a lona e os centros de mesa",
-          "feito": false
+          "feito": false,
+          "prazo": "2027-01-15"
         },
         {
           "texto": "Enviar convites com data-limite para confirmar presença",
-          "feito": false
+          "feito": false,
+          "prazo": "2027-01-10"
         },
         {
           "texto": "Saber se os pais vêm (17 ou 13 pessoas)",
-          "feito": false
+          "feito": false,
+          "prazo": "2027-01-31"
         }
       ]
     },
@@ -339,27 +365,33 @@
       "itens": [
         {
           "texto": "Confirmar presenças e passar o número final aos fornecedores",
-          "feito": false
+          "feito": false,
+          "prazo": "2027-02-13"
         },
         {
           "texto": "Mandar o dress code no grupo",
-          "feito": false
+          "feito": false,
+          "prazo": "2027-02-01"
         },
         {
           "texto": "Montar a playlist e testar a caixa de som",
-          "feito": false
+          "feito": false,
+          "prazo": "2027-02-13"
         },
         {
           "texto": "Montar as lembrancinhas",
-          "feito": false
+          "feito": false,
+          "prazo": "2027-02-13"
         },
         {
           "texto": "Combinar com o fotógrafo a lista de fotos e o parabéns",
-          "feito": false
+          "feito": false,
+          "prazo": "2027-02-13"
         },
         {
           "texto": "Roupa, cabelo e maquiagem",
-          "feito": false
+          "feito": false,
+          "prazo": "2027-02-13"
         }
       ]
     },
@@ -368,15 +400,18 @@
       "itens": [
         {
           "texto": "Levar lona, lembrancinhas, porta-retratos, velas e gelo",
-          "feito": false
+          "feito": false,
+          "prazo": "2027-02-20"
         },
         {
           "texto": "Receber os fornecedores",
-          "feito": false
+          "feito": false,
+          "prazo": "2027-02-20"
         },
         {
           "texto": "Parabéns com o fotógrafo avisado",
-          "feito": false
+          "feito": false,
+          "prazo": "2027-02-20"
         }
       ]
     }
@@ -416,31 +451,38 @@
       "itens": [
         {
           "texto": "Fita de cetim rosa ou coral, 10 a 15 mm, cerca de 30 m",
-          "feito": false
+          "feito": false,
+          "prazo": "2027-01-20"
         },
         {
           "texto": "Sousplat personalizado, um por lugar",
-          "feito": false
+          "feito": false,
+          "prazo": "2026-12-15"
         },
         {
           "texto": "Porta-retratos (5 ou 6) para os centros de mesa",
-          "feito": false
+          "feito": false,
+          "prazo": "2027-01-20"
         },
         {
           "texto": "Velas numerais 2 e 5 e isqueiro",
-          "feito": false
+          "feito": false,
+          "prazo": "2027-01-20"
         },
         {
           "texto": "Cabo P2 ou adaptador Bluetooth, se a caixa do salão precisar",
-          "feito": false
+          "feito": false,
+          "prazo": "2027-01-20"
         },
         {
           "texto": "Ganchos adesivos ou fita de alta fixação para a lona",
-          "feito": false
+          "feito": false,
+          "prazo": "2027-01-20"
         },
         {
           "texto": "20 kg de gelo para o bar (no dia)",
-          "feito": false
+          "feito": false,
+          "prazo": "2027-02-20"
         }
       ]
     },
@@ -479,6 +521,172 @@
     {
       "nome": "Design da lona",
       "url": "https://claude.ai/artifact/SzhYV4ByTb1UdUfBmVBbnD"
+    },
+    {
+      "nome": "Convite para os convidados",
+      "url": "convite.html"
     }
-  ]
+  ],
+  "pagamentos": [
+    {
+      "descricao": "Sinal do bar",
+      "fornecedor": "Oliveira Drinks",
+      "valor": 200,
+      "vencimento": "2026-12-09",
+      "paga": "Mãe",
+      "pago": false
+    },
+    {
+      "descricao": "Restante do bar",
+      "fornecedor": "Oliveira Drinks",
+      "valor": 950,
+      "vencimento": "2027-02-19",
+      "paga": "Mãe",
+      "pago": false
+    }
+  ],
+  "convidados_lista": [
+    {
+      "nome": "Anna Luiza",
+      "grupo": "Amigos",
+      "status": "convidado",
+      "restricao": "Alergia a camarão"
+    },
+    {
+      "nome": "Larissa",
+      "grupo": "Amigos",
+      "status": "convidado",
+      "restricao": ""
+    },
+    {
+      "nome": "Geovanna",
+      "grupo": "Amigos",
+      "status": "convidado",
+      "restricao": ""
+    },
+    {
+      "nome": "Lilian",
+      "grupo": "Amigos",
+      "status": "convidado",
+      "restricao": ""
+    },
+    {
+      "nome": "Mayarah",
+      "grupo": "Amigos",
+      "status": "convidado",
+      "restricao": ""
+    },
+    {
+      "nome": "Felipe",
+      "grupo": "Amigos",
+      "status": "convidado",
+      "restricao": ""
+    },
+    {
+      "nome": "Nicolas",
+      "grupo": "Amigos",
+      "status": "convidado",
+      "restricao": ""
+    },
+    {
+      "nome": "Marina",
+      "grupo": "Amigos",
+      "status": "convidado",
+      "restricao": ""
+    },
+    {
+      "nome": "Antonny",
+      "grupo": "Amigos",
+      "status": "convidado",
+      "restricao": ""
+    },
+    {
+      "nome": "Abmael",
+      "grupo": "Amigos",
+      "status": "convidado",
+      "restricao": ""
+    },
+    {
+      "nome": "João Victor",
+      "grupo": "Amigos",
+      "status": "convidado",
+      "restricao": ""
+    },
+    {
+      "nome": "Carolina",
+      "grupo": "Amigos",
+      "status": "convidado",
+      "restricao": ""
+    },
+    {
+      "nome": "Isabelly",
+      "grupo": "Aniversariante",
+      "status": "confirmado",
+      "restricao": ""
+    },
+    {
+      "nome": "Claudio",
+      "grupo": "Família (Alagoas)",
+      "status": "talvez",
+      "restricao": ""
+    },
+    {
+      "nome": "Ivanilda",
+      "grupo": "Família (Alagoas)",
+      "status": "talvez",
+      "restricao": ""
+    },
+    {
+      "nome": "Elysson",
+      "grupo": "Família (Alagoas)",
+      "status": "talvez",
+      "restricao": ""
+    },
+    {
+      "nome": "Manu",
+      "grupo": "Família (Alagoas)",
+      "status": "talvez",
+      "restricao": ""
+    }
+  ],
+  "roteiro": [
+    {
+      "hora": "14:00",
+      "texto": "Montagem do buffet, do bar e da decoração (confirmar horário com cada um)"
+    },
+    {
+      "hora": "16:00",
+      "texto": "Chegada dos convidados, mesa e drinks"
+    },
+    {
+      "hora": "17:30",
+      "texto": "Parabéns perto do pôr do sol, com o fotógrafo avisado"
+    },
+    {
+      "hora": "",
+      "texto": "Entrega das lembrancinhas e encerramento (definir com buffet e bar)"
+    }
+  ],
+  "mensagens": [
+    {
+      "titulo": "Dress code para o grupo",
+      "para": "Convidados",
+      "texto": "Dress code da festa: tons de rosa, vermelho ou coral. Vale qualquer tom da paleta, e eu vou de branco. Quanto mais colorido, melhor!"
+    },
+    {
+      "titulo": "Resposta ao Samuel",
+      "para": "Oliveira Drinks",
+      "texto": "Oi, Samuel! Gostei muito do orçamento. Uma dúvida: se a festa for de 13 pessoas, o valor muda? Sobre o tempo de duração, vou definir com o buffet e te aviso em breve. Pode incluir o drink sem álcool no contrato? Obrigada!"
+    },
+    {
+      "titulo": "Tema para o buffet",
+      "para": "Più Buono",
+      "texto": "Ainda não tenho um tema definido, mas tenho um moodboard e uma paleta de cores. Estou terminando de montar no computador e já te mando, para você ter uma ideia do estilo que eu quero."
+    }
+  ],
+  "convite": {
+    "confirmar_ate": "2027-01-31",
+    "endereco": "",
+    "whatsapp": ""
+  }
 }

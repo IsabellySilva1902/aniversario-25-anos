@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Convite: 25 anos da Isabelly</title>
+<meta property="og:title" content="25 anos da Isabelly">
+<meta property="og:description" content="Chá da tarde de aniversário, 20 de fevereiro de 2027">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,700&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+:root{--rosa:#E6358A;--rosa-claro:#F4A6C4;--vermelho:#D62839;--coral:#FF7F6B;--amarelo:#FFD66B;--creme:#FBF1E3;--oliva:#4F6B4A;--tinta:#3A2530;--suave:#6E5862;--linha:#EBD9C8;--cartao:#FFFDF9}
+*{box-sizing:border-box}
+body{margin:0;background:var(--creme);color:var(--tinta);font-family:"DM Sans",system-ui,sans-serif;line-height:1.5}
+.wrap{max-width:560px;margin:0 auto;padding:28px 16px 48px;text-align:center}
+.stk{display:flex;justify-content:center;align-items:flex-end;margin:0 auto 6px;max-width:440px}
+.stk img{width:25%;height:auto;margin:0 -2%}
+.stk img:nth-child(1){transform:rotate(-8deg)}
+.stk img:nth-child(2){transform:rotate(4deg) translateY(-6px)}
+.stk img:nth-child(3){transform:rotate(-3deg)}
+.stk img:nth-child(4){transform:rotate(7deg) translateY(-4px)}
+.pre{font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--oliva);font-size:.82rem;margin-top:10px}
+h1{font-family:"Fraunces",Georgia,serif;font-size:clamp(2.6rem,12vw,4rem);line-height:1;color:var(--vermelho);margin:8px 0 6px;letter-spacing:-.02em}
+.tag{color:var(--rosa);font-weight:700}
+.card{background:var(--cartao);border:1px solid var(--linha);border-radius:20px;padding:20px;margin-top:18px}
+.count{display:flex;justify-content:center;gap:22px;background:var(--rosa);color:#fff;border:0}
+.count .n{font-family:"Fraunces",serif;font-size:2.6rem;font-weight:700;line-height:1;display:block}
+.count .u{font-size:.85rem}
+.lab{font-size:.78rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--suave)}
+.big{font-family:"Fraunces",serif;font-size:1.35rem;font-weight:700;margin:4px 0 0}
+.sw{display:flex;justify-content:center;gap:8px;margin:12px 0 4px}
+.sw span{width:34px;height:34px;border-radius:50%;border:2px solid #fff;box-shadow:0 0 0 1px var(--linha)}
+.btn{display:inline-block;margin-top:14px;background:var(--rosa);color:#fff;font-weight:700;text-decoration:none;padding:12px 22px;border-radius:99px;min-height:44px}
+.muted{color:var(--suave)}
+</style>
+</head>
+<body>
+<main class="wrap">
+  <div class="stk" aria-hidden="true">
+    <img src="img/busto-1.png" alt=""><img src="img/busto-2.png" alt=""><img src="img/busto-3.png" alt=""><img src="img/busto-4.png" alt="">
+  </div>
+  <div class="pre">Convite</div>
+  <h1>25 anos da Isabelly</h1>
+  <div class="tag">#IsaFaz25</div>
+  <p class="muted" id="formato" style="margin:12px 0 0">Um chá da tarde íntimo e descontraído, com mesa bonita e drinks, só para amigos e família.</p>
+
+  <div class="card count" id="contagem" aria-live="polite"></div>
+
+  <div class="card">
+    <div class="lab">Quando</div>
+    <p class="big" id="quando"></p>
+    <div class="lab" style="margin-top:16px">Onde</div>
+    <p class="big" id="onde"></p>
+    <p class="muted" id="endereco" style="margin:4px 0 0"></p>
+  </div>
+
+  <div class="card">
+    <div class="lab">Dress code</div>
+    <div class="sw" aria-hidden="true"><span style="background:#E6358A"></span><span style="background:#F4A6C4"></span><span style="background:#D62839"></span><span style="background:#FF7F6B"></span></div>
+    <p style="margin:6px 0 0" id="dress">Tons de rosa, vermelho ou coral. Quanto mais colorido, melhor!</p>
+  </div>
+
+  <div class="card" id="rsvp">
+    <div class="lab">Confirme sua presença</div>
+    <p class="big" id="ate"></p>
+    <a class="btn" id="zap" hidden target="_blank" rel="noopener">Confirmar pelo WhatsApp</a>
+  </div>
+</main>
+<script>
+const $ = id => document.getElementById(id);
+fetch('dados.json', {cache: 'no-store'}).then(r => r.json()).then(d => {
+  const f = d.festa, c = d.convite || {};
+  const dt = new Date(f.inicio);
+  const dia = dt.toLocaleDateString('pt-BR', {weekday: 'long', day: 'numeric', month: 'long'});
+  const h = dt.toLocaleTimeString('pt-BR', {hour: '2-digit', minute: '2-digit'}).replace(':00', 'h').replace(':', 'h');
+  $('quando').textContent = dia.charAt(0).toUpperCase() + dia.slice(1) + ', às ' + h;
+  $('onde').textContent = 'Salão de festas do condomínio, bairro Sim';
+  $('endereco').textContent = c.endereco || 'Feira de Santana. O endereço completo vai no grupo.';
+  if (c.confirmar_ate) $('ate').textContent = 'Até ' + new Date(c.confirmar_ate + 'T12:00').toLocaleDateString('pt-BR', {day: 'numeric', month: 'long'});
+  else $('rsvp').hidden = true;
+  const z = String(c.whatsapp || '').replace(/\D/g, '');
+  if (z) { $('zap').href = 'https://wa.me/' + (z.length <= 11 ? '55' + z : z) + '?text=' + encodeURIComponent('Oi, Isa! Confirmo minha presença no seu aniversário de 25 anos.'); $('zap').hidden = false; }
+  const tick = () => {
+    let ms = Math.max(0, dt - Date.now());
+    const dias = Math.floor(ms / 864e5); ms -= dias * 864e5;
+    const hs = Math.floor(ms / 36e5);
+    $('contagem').innerHTML = dt <= Date.now() ? '<span class="n">É hoje!</span>'
+      : `<div><span class="n">${dias}</span><span class="u">${dias === 1 ? 'dia' : 'dias'}</span></div><div><span class="n">${hs}</span><span class="u">${hs === 1 ? 'hora' : 'horas'}</span></div>`;
+  };
+  tick(); setInterval(tick, 60000);
+});
+</script>
+</body>
+</html>
